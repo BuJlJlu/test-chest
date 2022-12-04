@@ -1,0 +1,100 @@
+@keyframes blick {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes victory {
+  0% {
+    background-image: url("/src/assets/images/chest/chest_Close.png");
+  }
+  50% {
+    background-image: url("/src/assets/images/chest/chest_Open_Gold_half.png");
+  }
+  100% {
+    background-image: url("/src/assets/images/chest/chest_Open_Gold.png");
+  }
+}
+
+@keyframes lose {
+  0% {
+    background-image: url("/src/assets/images/chest/chest_Close.png");
+  }
+  50% {
+    background-image: url("/src/assets/images/chest/chest_Open_Empty_half.png");
+  }
+  100% {
+    background-image: url("/src/assets/images/chest/chest_Open_Empty.png");
+  }
+}
+
+@keyframes lose {
+  0% {
+    background-image: url("/src/assets/images/chest/chest_Close.png");
+  }
+  50% {
+    background-image: url("/src/assets/images/chest/chest_Open_Empty_half.png");
+  }
+  100% {
+    background-image: url("/src/assets/images/chest/chest_Open_Empty.png");
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fromTop {
+  0% {
+    transform: translateY(-1000%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-enter-active {
+  .modal__wrapper {
+      animation: fromTop 0.3s;
+    }
+    .modal__background {
+      animation: opacity 0.3s;
+    }
+}
+.modal-leave-active {
+  .modal__wrapper {
+    animation: fromTop 0.3s reverse;
+  }
+  .modal__background {
+    animation: opacity 0.3s reverse;
+  }
+}
