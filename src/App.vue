@@ -225,11 +225,13 @@ export default {
 .page {
   position: relative;
 
-  min-height: 100vh;
+  height: 100vh;
 
   background-color: $black;
   background-size: cover;
   background-image: url("/src/assets/images/background.jpg");
+
+  overflow: hidden;
 
   .left-wall {
     position: absolute;
