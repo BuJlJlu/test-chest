@@ -348,6 +348,8 @@ export default {
 }
 
 .canvas-wrapper {
+  pointer-events: none;
+
   position: absolute;
 
   height: 579px;
